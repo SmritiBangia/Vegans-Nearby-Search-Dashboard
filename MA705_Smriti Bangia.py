@@ -328,6 +328,8 @@ def update_graph(input_zipcode,select_category,select_radius):
 
     return figure, fig1
 
+server = app.server
+
 @app.callback( 
     Output(component_id="table_div", component_property="children"),
     [Input(component_id='input_zipcode', component_property='value'),
