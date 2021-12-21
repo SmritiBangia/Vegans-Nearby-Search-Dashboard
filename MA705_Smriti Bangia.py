@@ -26,10 +26,10 @@ pd.set_option('max_rows',20)
 # In[31]:
 
 
-shelter = pd.read_csv('/Users/smritibangia/Downloads/archive (1)/mass_shelters.csv')
-grocery = pd.read_csv('/Users/smritibangia/Downloads/archive (1)/mass_veg_grocery.csv')
-rest = pd.read_csv('/Users/smritibangia/Downloads/archive (1)/mass_veg_rest.csv')
-zipcoordinates = pd.read_excel("/Users/smritibangia/Downloads/archive (1)/zip_coordinates.xlsx")
+shelter = pd.read_csv('mass_shelters.csv')
+grocery = pd.read_csv('mass_veg_grocery.csv')
+rest = pd.read_csv('mass_veg_rest.csv')
+zipcoordinates = pd.read_excel("zip_coordinates.xlsx")
 
 
 # In[32]:
