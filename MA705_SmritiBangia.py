@@ -121,16 +121,16 @@ shelter['lng'] = lng
 
 # Combined table for all datasets    
 
-# grocery['category'] = 'Grocery Store'
-# rest['category'] = 'Restaurant'
-# shelter['category'] = 'Shelter'
+grocery['category'] = 'Grocery Store'
+rest['category'] = 'Restaurant'
+shelter['category'] = 'Shelter'
 
-# result = grocery.append(rest).append(shelter)
-# result.reset_index(inplace=True)
-# result.drop(columns='index',inplace=True)
+result = grocery.append(rest).append(shelter)
+result.reset_index(inplace=True)
+result.drop(columns='index',inplace=True)
 
 
-# result.to_csv('result0.csv')
+result.to_csv('result0.csv')
 
 
 # In[50]:
@@ -372,7 +372,7 @@ def update_table(input_zipcode,select_category,select_radius):
                 lons.append(lon1)
                 names.append(i)
         
-    tab = a.loc[a.name.isin(names),['name','rating','address','phone','category']]
+    tab = a.loc[a.name.isin(names),['name','rating','address','phone']]
     return generate_table(tab)
 
 if __name__ == '__main__':
