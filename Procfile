@@ -1,1 +1,0 @@
-web: gunicorn MA705_SmritiBangia:server
